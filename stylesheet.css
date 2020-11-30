@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "raleway";
+    src: url("raleway/Raleway-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "raleway", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: medium;
+}
+
+h2 {
+    font-size: small;
+}
+
+h3 {
+    font-size: smaller;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: small;
+    color: grey;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+}
+
+#logo {
+    margin-top: 12px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0065FC;
+    border-top: solid 1px #0065FC;
+    padding-top: 20px;
+}
+
+#filters_form {
+    margin: 20px 0px;
+}
+
+form, #research {
+    display: flex;
+    flex-direction: row;
+}
+
+#research {
+   width: 30%;
+   margin: 10px 0px;
+   border: solid 1px #F2F2F2;
+   border-radius: 12px 12px;
+}
+
+#research_button {
+    padding: 10px 20px;
+}
+
+#clic_research {
+    background-color: #0065FC;
+    border-radius: 1px 10px 10px 1px;
+    padding-right: 10px;
+    color: white;
+}
+
+#clic_research:focus {
+    outline: none;
+}
+
+#information {
+    display: flex;
+}
+
+.fa-map-marker-alt {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #F2F2F2;
+    border-radius: 10px 1px 1px 10px;
+}
+
+.filter_icon {
+    color: #0065FC;
+    background-color: rgb(208, 232, 252);
+    border: rgb(208, 232, 252);
+    border-radius: 50px 50px;
+    padding: 10px 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+}
+
+input:hover {
+    color:#0065FC;
+    font-weight: bold;
+}
+
+.fa-info {
+    font-size: x-small;
+    color: #0065FC ;
+    border: solid 1px #F2F2F2;
+    border-radius: 50px 50px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+#economic, #family, #romantic, #animals {
+    border-top: solid 2px #F2F2F2;
+    border-right: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    border-radius: 50px 50px;
+    margin-left: 30px;
+    padding-right: 15px;
+}
+
+label, p, .fa-map-marker-alt {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
