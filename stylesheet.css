@@ -161,7 +161,7 @@ label, p, .fa-map-marker-alt {
 article {
     width: 60%;
     margin-left: 5%;
-    margin-right: 30px;
+    margin-right: 40px;
     padding-left: 30px;
     border: #F2F2F2 solid;
     background-color: #F2F2F2;
@@ -250,4 +250,63 @@ aside {
 .fa-star {
     color: #F2F2F2;
     font-size: x-small;
+}
+
+#activity_section {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#activity {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+}
+
+.activity_border {
+    border:#F2F2F2 solid 1px;
+    background-color: white;
+    border-radius: 10px 10px;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.activity_border_last {
+    border:#F2F2F2 solid 1px;
+    background-color: white;
+    border-radius: 10px 10px;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    margin-bottom: 40px;
+}
+
+.activity_image {
+    border-radius: 10px 10px 1px 1px;
+}
+
+.activity_description {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.activity_sm_size {
+    width: 260px;
+    height: 120px;
+}
+
+.activity_md_size {
+    width: 260px;
+    height: 160px;
+}
+
+.activity_lg_size {
+    width: 260px;
+    height: 360px;
+}
+
+.activity_half_size {
+    width: 260px;
+    height: 140px;
 }
