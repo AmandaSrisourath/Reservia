@@ -43,7 +43,6 @@ strong {
 
 p, li {
     font-size: small;
-    color: grey;
 }
 
 #header-nav {
@@ -348,10 +347,6 @@ aside {
     height: 360px;
 }
 
-.footer_information {
-    margin-right: 30px;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -370,8 +365,12 @@ p {
         margin-bottom: 10px;
     }
 
+    h2 {
+        margin-left: 16px;
+    }
+
     h3 {
-        margin-top: 20px;
+        margin-top: 8px;
     }
 
     #nav_header {
@@ -462,13 +461,13 @@ p {
 
     article {
         width: auto;
-        margin: auto;
+        margin: 16px 16px;
         background-color: white;
-        padding: 10px 10px;
+        padding: 4px 4px;
     }
 
     .accomodation_image, .activity_image {
-        width: 280px;
+        width: 330px;
         height: 110px;
     }
 
@@ -480,15 +479,18 @@ p {
 
     .accomodation_border {
         box-shadow: 10px 5px 5px #F2F2F2;
-        margin: 0px;
-        margin-top: 10px;
+        margin: 8px 8px;
     }
 
     aside {
         width: auto;
         margin-right: 0px;
-        padding: 10px 10px 20px;
+        padding: 16px 16px;
         margin-bottom: 10px;
+    }
+
+    .popular_image {
+        padding-top: 4px;
     }
 
     .popular_accomodation {
@@ -497,19 +499,23 @@ p {
     }
 
     #activity_section {
-        margin-top: 20px;
+        margin: 16px 16px;
     }
 
     .activity_border {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    #activity_section {
+        width: auto;
     }
 
     footer {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 16px 16px;
     }
 }
 
