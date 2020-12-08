@@ -32,6 +32,10 @@ h4 {
     font-size: smaller;
 }
 
+h2, h5 {
+    margin-left: 14px;
+}
+
 strong {
     color: #0065FC;
 }
@@ -309,10 +313,7 @@ aside {
     background-color: white;
     border-radius: 20px 20px;
     box-shadow: 10px 5px 5px #F2F2F2;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 16px 8px;
     cursor: pointer;
 }
 
@@ -321,28 +322,28 @@ aside {
 }
 
 .activity_description {
-    padding-left: 20px;
+    padding-left: 16px;
     padding-bottom: 10px;
     margin-bottom: 0px;
 }
 
 .activity_sm_size {
-    width: 260px;
+    width: 266px;
     height: 120px;
 }
 
 .activity_md_size {
-    width: 259px;
+    width: 266px;
     height: 180px;
 }
 
 .activity_half_size {
-    width: 259px;
+    width: 266px;
     height: 150px;
 }
 
 .activity_lg_size {
-    width: 259px;
+    width: 266px;
     height: 360px;
 }
 
@@ -351,7 +352,7 @@ footer {
     justify-content: space-between;
     border: #F2F2F2 solid;
     background-color: #F2F2F2;
-    padding: 16px 30% 16px 5%;
+    padding: 16px 26% 16px 6%;
 }
 
 p {
@@ -550,15 +551,17 @@ p {
     #inscription {
         display: none;
     }
-    
+
     .filter {
-        margin-left: 14px;
-        padding-left: 0px;
+        margin-left: 10px;
+    }
+
+    input {
+        padding-left: 8px;
     }
 
     aside {
         width: auto;
-        margin-bottom: 20px;
         margin-right: 0px;
         margin-bottom: 0px;
     }
@@ -568,18 +571,13 @@ p {
         flex-direction: column-reverse;
     }
 
-    #all_popular{
-        display: flex;
-        justify-content: center;
-    }
-
     .popular_image {
         margin-right: 0px;
     }
 
     .accomodation_popular_border {
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
 
     .popular_title, .popular_star {
@@ -598,7 +596,7 @@ p {
     }
     
     .accomodation_border {
-        margin: 10px 10px;
+        margin: 8px px;
         box-shadow: #F2F2F2 10px 5px 5px;
     }
 
@@ -607,13 +605,6 @@ p {
     }
 
     .activity_border {
-        margin-right: 13px;
-        margin-left: 13px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        padding-top: 25px;
+        margin: 16px 8px;
     }
 }
