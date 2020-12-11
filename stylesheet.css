@@ -11,24 +11,23 @@ body {
     font-weight: normal;
 }
 
-h1 {
-    font-size: medium;
+h1, h3 {
     margin-bottom: 0px;
 }
 
-h2 {
+h1, h2 {
     font-size: medium;
-    margin-bottom: 0px;
+}
+
+h2 {
     margin-bottom: 8px;
 }
 
 h3 {
-    font-size: smaller;
     margin-top: 16px;
-    margin-bottom: 0px;
 }
 
-h4 {
+h3, h4 {
     font-size: smaller;
 }
 
@@ -54,7 +53,7 @@ p, li {
     justify-content: space-between;
 }
 
-#nav_mobile {
+#nav_mobile, #inscription, .fa-search {
     display: none;
 }
 
@@ -63,10 +62,6 @@ header {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-#inscription {
-    display: none;
 }
 
 ul {
@@ -95,7 +90,7 @@ a {
     margin: 20px 0px;
 }
 
-form, #research {
+form, #research, #information, #accomodation_section, .popular_accomodation {
     display: flex;
 }
 
@@ -119,16 +114,8 @@ form, #research {
     cursor: pointer;
 }
 
-#clic_research:focus {
+#clic_research:focus, input:focus {
     outline: none;
-}
-
-.fa-search {
-    display: none;
-}
-
-#information {
-    display: flex;
 }
 
 .fa-map-marker-alt {
@@ -138,7 +125,7 @@ form, #research {
     border-radius: 10px 1px 1px 10px;
 }
 
-label {
+label, input {
     font-weight: bold;
 }
 
@@ -150,16 +137,11 @@ label {
     padding: 10px 10px;
 }
 
-input:focus {
-    outline: none;
-}
-
 input {
     border: none;
     padding-left: 16px;
     background-color: white;
     cursor: pointer;
-    font-weight: bold;
 }
 
 input:hover {
@@ -239,10 +221,6 @@ article {
     cursor: pointer;
 }
 
-#accomodation_section {
-    display: flex;
-}
-
 aside {
     margin-right: 5%;
     padding: 16px 32px;
@@ -272,9 +250,6 @@ aside {
     justify-content: space-between;
 }
 
-.popular_accomodation {
-    display: flex;
-}
 .popular_description {
     display: flex;
     flex-direction: column;
@@ -319,6 +294,7 @@ aside {
 
 .activity_image {
     border-radius: 15px 15px 1px 1px;
+    width: 266px;
 }
 
 .activity_description {
@@ -328,22 +304,18 @@ aside {
 }
 
 .activity_sm_size {
-    width: 266px;
     height: 120px;
 }
 
 .activity_md_size {
-    width: 266px;
     height: 180px;
 }
 
 .activity_half_size {
-    width: 266px;
     height: 150px;
 }
 
 .activity_lg_size {
-    width: 266px;
     height: 360px;
 }
 
@@ -373,7 +345,7 @@ p {
         margin-top: 8px;
     }
 
-    #nav_header {
+    #nav_header, #clic_research {
         display: none;
     }
 
@@ -409,10 +381,6 @@ p {
     #accomodation_activity a:hover {
         padding-top: 0px;
         border-bottom: solid 2px #0065FC;
-    }
-
-    #clic_research {
-        display: none;
     }
 
     #research_button {
@@ -522,27 +490,23 @@ p {
 
 
 @media only screen and (min-width : 752px) and (max-width : 767px) {
-    .accomodation_image {
+    .accomodation_image, .activity_image {
         width: 310px;
     }
 
     .activity_sm_size {
-        width: 310px;
         height: 120px;
     }
     
     .activity_md_size {
-        width: 310px;
         height: 180px;
     }
     
     .activity_half_size {
-        width: 310px;
         height: 150px;
     }
     
     .activity_lg_size {
-        width: 310px;
         height: 360px;
     }
 }
