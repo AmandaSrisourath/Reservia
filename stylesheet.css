@@ -111,7 +111,6 @@ form, #research, #information, #accomodation-section, .popular-accomodation {
     border-radius: 1px 10px 10px 1px;
     padding-right: 10px;
     color: white;
-    cursor: pointer;
 }
 
 #clic_research:focus, input:focus {
@@ -141,12 +140,12 @@ input {
     border: none;
     padding-left: 16px;
     background-color: white;
-    cursor: pointer;
 }
 
 input:hover {
     color:#0065FC;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .fa-info {
@@ -166,6 +165,7 @@ input:hover {
     border-radius: 50px 50px;
     margin-left: 30px;
     padding-right: 15px;
+    cursor: pointer;
 }
 
 label, p, .fa-map-marker-alt {
@@ -210,7 +210,6 @@ article, #activity {
     border-radius: 20px 20px;
     margin: 8px 6px 8px;
     padding: 5px 5px;
-    cursor: pointer;
 }
 
 aside {
@@ -235,7 +234,6 @@ aside {
     border-radius: 20px 20px;
     margin: 8px 8px 16px;
     padding: 5px 5px;
-    cursor: pointer;
 }
 
 .popular_image {
@@ -283,7 +281,6 @@ aside {
     border-radius: 20px 20px;
     box-shadow: 10px 5px 5px #F2F2F2;
     margin: 16px 8px;
-    cursor: pointer;
 }
 
 .activity_image {
@@ -381,7 +378,6 @@ p {
         border: #F2F2F2 solid 1px;
         border-right: none;
         padding-right: 40px;
-        cursor: auto;
     }
 
     .fa-search {
@@ -532,7 +528,6 @@ p {
         border: #F2F2F2 solid 1px;
         border-right: none;
         padding-right: 80px;
-        cursor: auto;
     }
 
     .fa-search {
