@@ -1,18 +1,28 @@
 @font-face {
-    font-family: "raleway";
+    font-family: "raleway-regular";
     src: url("raleway/Raleway-Regular.ttf") format("truetype");
-    src: url("ralewy/Raleway-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "raleway-semiBold";
+    src: url("raleway/Raleway-SemiBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 body {
-    font-family: "raleway", Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-family: "raleway-regular", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, #filter {
+    font-family: "raleway-semiBold", Arial, Helvetica, sans-serif;
 }
 
 h1, h3 {
     margin-bottom: 0px;
+    
 }
 
 h1, h2 {
@@ -24,7 +34,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 h3, h4 {
@@ -32,7 +42,11 @@ h3, h4 {
 }
 
 h2, h5 {
-    margin-left: 14px;
+    margin-left: 16px;
+}
+
+p, li {
+    font-size: small;
 }
 
 strong {
@@ -42,10 +56,6 @@ strong {
 #logo {
     margin-bottom: 16px;
     margin-top: 12px;
-}
-
-p, li {
-    font-size: small;
 }
 
 #header-nav {
@@ -60,8 +70,8 @@ p, li {
 header {
     width: 90%;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 ul {
@@ -86,46 +96,58 @@ a {
     padding-top: 40px;
 }
 
-#filter-form {
-    margin: 20px 0px;
-}
-
 form, #research, #information, #accomodation-section, .popular-accomodation {
     display: flex;
 }
 
 #research {
    width: 25%;
-   margin: 10px 0px;
+   margin: 16px 0px;
 }
 
-#research_button {
+#research-button {
     padding: 10px 20px;
     border: #F2F2F2 solid 1px;
     cursor: auto;
     color: black;
 }
 
-#clic_research {
+#clic-research {
     background-color: #0065FC;
-    border-radius: 1px 10px 10px 1px;
-    padding-right: 10px;
+    border-radius: 1px 12px 12px 1px;
+    padding-left: 16px;
+    padding-right: 16px;
     color: white;
 }
 
-#clic_research:focus, input:focus {
+#clic-research:focus, input:focus {
     outline: none;
 }
 
 .fa-map-marker-alt {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-color: #F2F2F2;
-    border-radius: 10px 1px 1px 10px;
+    border-radius: 12px 1px 1px 12px;
 }
 
 label, input {
     font-weight: bold;
+}
+
+#filter-form {
+    margin: 24px 0px;
+}
+
+.filter {
+    display: flex;
+    border-top: solid 2px #F2F2F2;
+    border-right: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    border-radius: 50px 50px;
+    margin-left: 30px;
+    padding-right: 16px;
+    cursor: pointer;
 }
 
 .filter_icon {
@@ -157,16 +179,6 @@ input:hover {
     padding: 4px 7px;
 }
 
-.filter {
-    display: flex;
-    border-top: solid 2px #F2F2F2;
-    border-right: solid 2px #F2F2F2;
-    border-bottom: solid 2px #F2F2F2;
-    border-radius: 50px 50px;
-    margin-left: 30px;
-    padding-right: 15px;
-    cursor: pointer;
-}
 
 label, p, .fa-map-marker-alt {
     display: flex;
@@ -180,12 +192,12 @@ label, p, .fa-map-marker-alt {
 }
 
 #accomodation {
-    width: 60%;
+    width: 75%;
     margin-left: 5%;
-    margin-right: 16px;
+    margin-right: 32px;
     padding: 16px 32px;
     background-color: #F2F2F2;
-    border-radius: 10px 10px;
+    border-radius: 16px 16px;
 }
 
 article, #activity {
@@ -196,8 +208,8 @@ article, #activity {
 }
 
 .accomodation_image {
-    width: 190px;
-    height: 110px;
+    width: 196px;
+    height: 100px;
     border-radius: 15px 15px 1px 1px;
 }
 
@@ -208,16 +220,16 @@ article, #activity {
 .accomodation-border {
     background-color: white;
     border-radius: 20px 20px;
-    margin: 8px 6px 8px;
+    margin: 10px 10px;
     padding: 5px 5px;
 }
 
 aside {
     margin-right: 5%;
-    padding: 16px 32px;
+    padding: 16px 32px 0px;
     border: #F2F2F2;
     background-color: #F2F2F2;
-    border-radius: 10px 10px;
+    border-radius: 16px 16px;
 }
 
 #popular {
@@ -232,13 +244,13 @@ aside {
 .popular-accomodation-border {
     background-color: white;
     border-radius: 20px 20px;
-    margin: 8px 8px 16px;
+    margin: 10px 10px 24px;
     padding: 5px 5px;
 }
 
 .popular_image {
-    width: 140px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     margin-right: 16px;
     border-radius: 15px 1px 1px 15px;
 }
@@ -278,14 +290,14 @@ aside {
 .activity-border {
     border:#F2F2F2 solid 1px;
     background-color: white;
-    border-radius: 20px 20px;
+    border-radius: 16px 16px;
     box-shadow: 10px 5px 5px #F2F2F2;
-    margin: 16px 8px;
+    margin: 16px 16px 32px;
 }
 
 .activity_image {
     border-radius: 15px 15px 1px 1px;
-    width: 266px;
+    width: 250px;
 }
 
 .activity_description {
@@ -295,19 +307,19 @@ aside {
 }
 
 .activity_sm-size {
-    height: 120px;
+    height: 100px;
 }
 
 .activity_md-size {
-    height: 180px;
+    height: 160px;
 }
 
 .activity_half-size {
-    height: 150px;
+    height: 130px;
 }
 
 .activity_lg-size {
-    height: 360px;
+    height: 330px;
 }
 
 footer {
@@ -336,7 +348,7 @@ p {
         margin-top: 8px;
     }
 
-    #nav_header, #clic_research {
+    #nav_header, #clic-research {
         display: none;
     }
 
@@ -355,13 +367,13 @@ p {
         justify-content: flex-end;
     }
     
-    #accomodation_activity {
+    #accomodation-activity {
         display: flex;
         justify-content: space-around;
         margin-bottom: 32px;
     }
 
-    #accomodation_activity a {
+    #accomodation-activity a {
         border-top: none;
         padding-bottom: 16px;
         border-bottom: solid 2px #F2F2F2;
@@ -369,12 +381,12 @@ p {
         text-align: center;
     }
 
-    #accomodation_activity a:hover {
+    #accomodation-activity a:hover {
         padding-top: 0px;
         border-bottom: solid 2px #0065FC;
     }
 
-    #research_button {
+    #research-button {
         border: #F2F2F2 solid 1px;
         border-right: none;
         padding-right: 40px;
@@ -486,7 +498,7 @@ p {
         margin-top: 8px;
     }
 
-    #nav_header, #clic_research {
+    #nav_header, #clic-research {
         display: none;
     }
 
@@ -505,13 +517,13 @@ p {
         justify-content: flex-end;
     }
     
-    #accomodation_activity {
+    #accomodation-activity {
         display: flex;
         justify-content: space-around;
         margin-bottom: 32px;
     }
 
-    #accomodation_activity a {
+    #accomodation-activity a {
         border-top: none;
         padding-bottom: 16px;
         border-bottom: solid 2px #F2F2F2;
@@ -519,12 +531,12 @@ p {
         text-align: center;
     }
 
-    #accomodation_activity a:hover {
+    #accomodation-activity a:hover {
         padding-top: 0px;
         border-bottom: solid 2px #0065FC;
     }
 
-    #research_button {
+    #research-button {
         border: #F2F2F2 solid 1px;
         border-right: none;
         padding-right: 80px;
