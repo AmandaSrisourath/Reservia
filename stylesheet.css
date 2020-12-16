@@ -96,39 +96,40 @@ a {
     padding-top: 40px;
 }
 
-form, #research, #information, #accomodation-section, .popular-accomodation {
+form, #information, #accomodation-section, .popular-accomodation {
     display: flex;
 }
 
 #research {
+   display: flex;
    width: 25%;
    margin: 16px 0px;
+}
+
+.fa-map-marker-alt {
+    background-color: #F2F2F2;
+    border-radius: 12px 1px 1px 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #research-button {
     padding: 10px 20px;
     border: #F2F2F2 solid 1px;
-    cursor: auto;
     color: black;
+    cursor: auto;
 }
 
 #clic-research {
+    color: white;
     background-color: #0065FC;
     border-radius: 1px 12px 12px 1px;
     padding-left: 16px;
     padding-right: 16px;
-    color: white;
 }
 
 #clic-research:focus, input:focus {
     outline: none;
-}
-
-.fa-map-marker-alt {
-    padding-left: 16px;
-    padding-right: 16px;
-    background-color: #F2F2F2;
-    border-radius: 12px 1px 1px 12px;
 }
 
 label, input {
@@ -147,15 +148,14 @@ label, input {
     border-radius: 50px 50px;
     margin-left: 30px;
     padding-right: 16px;
-    cursor: pointer;
 }
 
 .filter_icon {
     color: #0065FC;
     background-color: #DEEBFF;
-    border: #DEEBFF;
     border-radius: 50px 50px;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 input {
@@ -192,10 +192,10 @@ label, p, .fa-map-marker-alt {
 }
 
 #accomodation {
-    width: 75%;
+    width: 70%;
     margin-left: 5%;
     margin-right: 32px;
-    padding: 16px 32px;
+    padding: 16px 32px 0px;
     background-color: #F2F2F2;
     border-radius: 16px 16px;
 }
@@ -217,7 +217,7 @@ article, #activity {
     padding-left: 10px;
 }
 
-.accomodation-border {
+.accomodation-border, .popular-accomodation-border {
     background-color: white;
     border-radius: 20px 20px;
     margin: 10px 10px;
@@ -226,33 +226,14 @@ article, #activity {
 
 aside {
     margin-right: 5%;
-    padding: 16px 32px 0px;
-    border: #F2F2F2;
+    padding: 16px 24px 0px;
     background-color: #F2F2F2;
     border-radius: 16px 16px;
 }
 
-#popular {
+#popular, .popular_description {
     display: flex;
     flex-direction: column;
-}
-
-.fa-chart-line {
-    margin-top: 15px;
-}
-
-.popular-accomodation-border {
-    background-color: white;
-    border-radius: 20px 20px;
-    margin: 10px 10px 24px;
-    padding: 5px 5px;
-}
-
-.popular_image {
-    width: 120px;
-    height: 120px;
-    margin-right: 16px;
-    border-radius: 15px 1px 1px 15px;
 }
 
 #popular-chart_line {
@@ -260,9 +241,15 @@ aside {
     justify-content: space-between;
 }
 
-.popular_description {
-    display: flex;
-    flex-direction: column;
+.fa-chart-line {
+    margin-top: 15px;
+}
+
+.popular_image {
+    width: 120px;
+    height: 120px;
+    margin-right: 16px;
+    border-radius: 15px 1px 1px 15px;
 }
 
 .popular_title {
@@ -283,8 +270,8 @@ aside {
 #activity-section {
     width: 90%;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 48px;
+    margin-bottom: 16px;
 }
 
 .activity-border {
@@ -295,15 +282,15 @@ aside {
     margin: 16px 16px 32px;
 }
 
-.activity_image {
-    border-radius: 15px 15px 1px 1px;
-    width: 250px;
-}
-
 .activity_description {
     padding-left: 16px;
     padding-bottom: 10px;
     margin-bottom: 0px;
+}
+
+.activity_image {
+    border-radius: 15px 15px 1px 1px;
+    width: 250px;
 }
 
 .activity_sm-size {
@@ -325,7 +312,6 @@ aside {
 footer {
     display: flex;
     justify-content: space-between;
-    border: #F2F2F2 solid;
     background-color: #F2F2F2;
     padding: 16px 26% 16px 6%;
 }
