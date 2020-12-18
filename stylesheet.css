@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, #filter {
 
 h1, h3 {
     margin-bottom: 0px;
-    
 }
 
 h1, h2 {
@@ -247,6 +246,10 @@ aside {
     margin-right: 12px;
 }
 
+#popular-content {
+    display: contents;
+}
+
 .popular_image {
     width: 110px;
     height: 110px;
@@ -396,7 +399,7 @@ p {
     }
 
     #activity-section {
-        margin: 0px 24px;
+        margin-top: 16px;
     }
 
     .activity_md-size, .activity_sm-size {
@@ -411,7 +414,7 @@ p {
 
 @media only screen and (max-width : 767px) {
     #container {
-        width: 375px;
+        width: 360px;
     }
     
     h1 {
@@ -419,7 +422,7 @@ p {
     }
 
     h2, h5 {
-        margin-left: 20px;
+        margin-left: 24px;
     }
 
     h3 {
@@ -467,7 +470,7 @@ p {
     #research-button {
         border: #F2F2F2 solid 1px;
         border-right: none;
-        padding-right: 80px;
+        padding-right: 64px;
     }
 
     .fa-search {
@@ -511,7 +514,7 @@ p {
     }
 
     .accomodation_image, .activity_image {
-        width: 330px;
+        width: 310px;
         height: 110px;
     }
 
@@ -545,7 +548,7 @@ p {
     }
 
     .popular-accomodation {
-        margin: 0px 14px 8px;
+        margin: 8px 14px 0px;
         padding-top: 0px;
     }
 
@@ -559,6 +562,6 @@ p {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 16px 16px;
+        padding: 16px 24px;
     }
 }
