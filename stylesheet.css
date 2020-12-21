@@ -315,7 +315,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 16px 26% 16px 6%;
+    padding: 16px 24% 16px 32px;
 }
 
 p {
