@@ -79,8 +79,6 @@ header {
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
 }
 
 li {
